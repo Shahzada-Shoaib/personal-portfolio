@@ -4,19 +4,28 @@ import { ArrowUpRight } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      period: 'Jun 2023 - Aug 2024',
-      title: 'Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie sodales finibus. Donec eget est nisl nec nulla interdum facilisis. Proin est tellus elementum, interdum quis sit, volutpate lectus. Mauris rutrum risus ac mi feugiat gravida. Ut rhoncus libero finibus lorem finibus, vel iaculis risus hendrerit. Integer nec elementum fellis.'
+      period: 'Jun 2021 - Present',
+      title: 'Lead Software Engineer | Teamo Inc',
+      location: 'Islamabad, Pakistan',
+      description: 'Led development of large-scale enterprise solutions for Fortune 500 companies including DELL and Amazon, resulting in a 30% increase in client satisfaction and a 25% reduction in system downtime.'
     },
     {
-      period: 'Jan 2022 - Dec 2022',
-      title: 'Ipsum | Lorem',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie sodales finibus. Donec eget est nisl nec nulla interdum facilisis. Proin est tellus elementum, interdum quis sit, volutpate lectus. Mauris rutrum risus ac mi feugiat gravida. Ut rhoncus libero finibus lorem finibus, vel iaculis risus hendrerit.'
+      period: 'Jan 2019 - Dec 2021',
+      title: 'Sr. Frontend Developer | XIQ inc',
+      location: 'California, USA',
+      description: 'Architected and built large-scale applications using React.js, improving application performance by 40% and reducing load times by 50%.'
     },
     {
-      period: 'Aug 2019 - Dec 2020',
-      title: 'Lorem Ipsum | Lorem Ipsum',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie sodales finibus. Donec eget est nisl nec nulla interdum facilibus. Proin est tellus elementum, interdum quis sit, volutpate lectus. Mauris rutrum risus ac mi feugiat gravida. Ut rhoncus libero finibus lorem finibus, vel iaculis risus hendrerit. Integer nec elementum fellis.'
+      period: 'Aug 2018 - Dec 2019',
+      title: 'Frontend Developer | Zeikh Technologies',
+      location: 'Dubai, Abu Dhabi',
+      description: 'Designed and developed 15+ high-conversion landing pages using React.js, contributing to a 45% growth in user base over 12 months.'
+    },
+    {
+      period: 'Aug 2017 - Dec 2018',
+      title: 'Frontend Developer | Techbay Solutions',
+      location: 'Lahore, Pakistan',
+      description: 'Developed custom animations and micro-interactions using CSS and JavaScript, enhancing user engagement and reducing bounce rates by 35% on landing pages.'
     }
   ];
 
@@ -37,7 +46,7 @@ const Experience: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-4">
+                  <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-xl font-semibold text-white">
                       {exp.title}
                     </h3>
@@ -46,6 +55,9 @@ const Experience: React.FC = () => {
                       className="text-gray-400 group-hover:text-cyan-400 transition-colors duration-200" 
                     />
                   </div>
+                  <p className="text-cyan-300 text-sm mb-3 font-medium">
+                    {exp.location}
+                  </p>
                   <p className="text-gray-400 leading-relaxed">
                     {exp.description}
                   </p>

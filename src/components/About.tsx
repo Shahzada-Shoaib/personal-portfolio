@@ -9,25 +9,43 @@ const About: React.FC = () => {
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="flex-shrink-0">
-            <div className="w-64 h-80 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg"></div>
+            <div className="w-64 h-80 rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src="/WhatsApp Image 2025-06-28 at 4.33.32 PM.jpeg" 
+                alt="Shahzada M. Salman"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* About Content */}
           <div className="flex-1 space-y-6">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-white">
-                Web Developer
+                Sr. Software Engineer
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                I am following for a career in technology. Currently, my focus is on learning and mastering essential web development skills. I have a solid foundation in <span className="text-white font-medium">HTML, CSS, Git</span> and <span className="text-white font-medium">JavaScript</span>.
+                Results-driven Lead Software Engineer with 7+ years of experience in developing robust, 
+                user-centric web applications. I have a solid foundation in <span className="text-white font-medium">JavaScript, React.js, Vue.js, Node.js</span>, 
+                and modern web technologies.
               </p>
             </div>
 
             <div>
               <p className="text-gray-400 leading-relaxed">
-                Currently, my focus is on learning and mastering essential web development skills. I have a solid foundation in modern web technologies and frameworks.
+                Currently focused on learning and mastering essential web development skills. 
+                I combine strong technical skills with deep understanding of UX principles to deliver 
+                high-performance applications that drive business growth and enhance user engagement.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-gray-400 leading-relaxed">
+                Proficient in Agile methodologies, CI/CD, and cloud technologies. 
+                Skilled in creating scalable back-end systems and intuitive front-end interfaces 
+                that significantly improve application performance and user satisfaction.
               </p>
             </div>
           </div>

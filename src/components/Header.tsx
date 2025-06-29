@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold">
-            <span className="text-white">Dev</span>
+            <span className="text-white">Shahzada</span>
             <span className="text-cyan-400">/</span>
           </div>
 

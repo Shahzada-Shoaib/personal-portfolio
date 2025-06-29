@@ -3,39 +3,11 @@ import React from 'react';
 const Formation: React.FC = () => {
   const formations = [
     {
-      title: 'UI/UX Design',
-      provider: 'Origamid',
-      duration: '17 hours',
-      icon: '🎨',
-      color: 'bg-purple-500'
-    },
-    {
-      title: 'HTML & CSS',
-      provider: 'Origamid',
-      duration: '23 hours',
-      icon: 'HTML',
-      color: 'bg-orange-500'
-    },
-    {
-      title: 'CSS Flexbox & Grid',
-      provider: 'Origamid',
-      duration: '6 hours',
-      icon: 'CSS',
+      title: 'Bachelor of Science in Computer Science',
+      provider: 'Lancaster University',
+      duration: '2013 - 2017',
+      icon: '🎓',
       color: 'bg-blue-500'
-    },
-    {
-      title: 'JavaScript',
-      provider: 'Origamid',
-      duration: '37 hours',
-      icon: 'JS',
-      color: 'bg-yellow-500'
-    },
-    {
-      title: 'Aprenda a Programar com JS, HTML e CSS',
-      provider: 'Rodrigo Branas',
-      duration: '12 hours',
-      icon: 'DEV',
-      color: 'bg-green-500'
     }
   ];
 
@@ -43,7 +15,7 @@ const Formation: React.FC = () => {
     <section id="formation" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold mb-16 text-center">
-          Formation<span className="text-cyan-400">.</span>
+          Education<span className="text-cyan-400">.</span>
         </h2>
 
         <div className="space-y-6">

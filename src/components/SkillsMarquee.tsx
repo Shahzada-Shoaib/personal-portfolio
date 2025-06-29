@@ -2,14 +2,22 @@ import React from 'react';
 
 const SkillsMarquee: React.FC = () => {
   const skills = [
-    'WEB',
-    'PROGRAMMING',
-    'DEVELOPMENT',
     'JAVASCRIPT',
-    'CSS',
-    'FIGMA',
-    'GIT',
-    'HTML',
+    'REACT.JS',
+    'VUE.JS',
+    'NODE.JS',
+    'TYPESCRIPT',
+    'SHOPIFY',
+    'SQL',
+    'NOSQL',
+    'AGILE',
+    'CI/CD',
+    'AWS',
+    'THIRD-PARTY INTEGRATION',
+    'CONTENTFUL',
+    'PRISMIC',
+    'STRAPI',
+    'HEADLESS CMS'
   ];
 
   return (
