@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Chemist Warehouse',
+      description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
+      image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['E-commerce', 'Pharmacy', 'Online Retail', 'Healthcare'],
+      liveUrl: 'https://chemistwarehouse.com.au/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'E-Commerce Platform',
       description: 'A modern e-commerce platform built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -24,7 +33,7 @@ const Projects: React.FC = () => {
     {
       title: 'Book My Studio',
       description: 'A comprehensive studio booking platform for France, allowing users to search and book recording studios. Features studio listings, booking management, and user authentication.',
-      image: '/Screenshot 2025-06-29 at 9.53.13 PM.png',
+      image: 'https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Laravel', 'JavaScript', 'PHP', 'MySQL'],
       liveUrl: 'https://www.bookmystudio.fr/',
       githubUrl: '#',
@@ -97,16 +106,22 @@ const Projects: React.FC = () => {
                   <div className="absolute top-4 right-4 flex gap-2">
                     <a
                       href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-2 bg-slate-800/80 hover:bg-cyan-400 rounded-lg transition-colors duration-200 group/link"
                     >
                       <ExternalLink size={16} className="text-white group-hover/link:text-slate-900" />
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      className="p-2 bg-slate-800/80 hover:bg-cyan-400 rounded-lg transition-colors duration-200 group/link"
-                    >
-                      <Github size={16} className="text-white group-hover/link:text-slate-900" />
-                    </a>
+                    {project.githubUrl !== '#' && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-slate-800/80 hover:bg-cyan-400 rounded-lg transition-colors duration-200 group/link"
+                      >
+                        <Github size={16} className="text-white group-hover/link:text-slate-900" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 
