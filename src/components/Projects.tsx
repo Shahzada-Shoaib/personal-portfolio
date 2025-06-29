@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
     {
       title: 'Chemist Warehouse',
       description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
-      image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/Screenshot 2025-06-30 at 12.57.02 AM.png',
       technologies: ['E-commerce', 'Pharmacy', 'Online Retail', 'Healthcare'],
       liveUrl: 'https://chemistwarehouse.com.au/',
       githubUrl: '#',
