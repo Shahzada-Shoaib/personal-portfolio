@@ -22,6 +22,15 @@ const Projects: React.FC = () => {
       featured: true
     },
     {
+      title: 'Book My Studio',
+      description: 'A comprehensive studio booking platform for France, allowing users to search and book recording studios. Features studio listings, booking management, and user authentication.',
+      image: '/Screenshot 2025-06-29 at 9.53.13 PM.png',
+      technologies: ['Laravel', 'JavaScript', 'PHP', 'MySQL'],
+      liveUrl: 'https://www.bookmystudio.fr/',
+      githubUrl: '#',
+      featured: false
+    },
+    {
       title: 'Weather Dashboard',
       description: 'A responsive weather dashboard that displays current weather conditions and forecasts with beautiful data visualizations.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -147,16 +156,22 @@ const Projects: React.FC = () => {
                   <div className="absolute top-2 right-2 flex gap-1">
                     <a
                       href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-1.5 bg-slate-800/80 hover:bg-cyan-400 rounded transition-colors duration-200 group/link"
                     >
                       <ExternalLink size={12} className="text-white group-hover/link:text-slate-900" />
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      className="p-1.5 bg-slate-800/80 hover:bg-cyan-400 rounded transition-colors duration-200 group/link"
-                    >
-                      <Github size={12} className="text-white group-hover/link:text-slate-900" />
-                    </a>
+                    {project.githubUrl !== '#' && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 bg-slate-800/80 hover:bg-cyan-400 rounded transition-colors duration-200 group/link"
+                      >
+                        <Github size={12} className="text-white group-hover/link:text-slate-900" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 
