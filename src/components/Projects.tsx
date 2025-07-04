@@ -6,18 +6,18 @@ const Projects: React.FC = () => {
     {
       title: 'Chemist Warehouse',
       description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
-      image: '/Screenshot 2025-06-30 at 12.57.02 AM.png',
+      image: '/Screenshot 2025-06-30 at 12.57.02 AM copy.png',
       technologies: ['E-commerce', 'Pharmacy', 'Online Retail', 'Healthcare'],
       liveUrl: 'https://chemistwarehouse.com.au/',
       githubUrl: '#',
       featured: true
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce platform built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      liveUrl: '#',
+      title: 'Rent My Ride',
+      description: 'Premium car rental platform in UAE offering luxury vehicles with zero deposit deals. Features advanced booking system, fleet management, and customer service integration.',
+      image: '/Screenshot 2025-07-05 at 4.46.26 AM.png',
+      technologies: ['Car Rental', 'Booking System', 'UAE', 'Luxury Cars'],
+      liveUrl: 'https://www.rentmyride.ae/',
       githubUrl: '#',
       featured: true
     },
