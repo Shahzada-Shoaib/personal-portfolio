@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
     {
       title: 'Book My Studio',
       description: 'A comprehensive studio booking platform for France, allowing users to search and book recording studios. Features studio listings, booking management, and user authentication.',
-      image: '/Screenshot 2025-07-05 at 5.02.02 AM.png',
+      image: '/Screenshot 2025-07-05 at 5.05.02 AM.png',
       technologies: ['Laravel', 'JavaScript', 'PHP', 'MySQL'],
       liveUrl: 'https://www.bookmystudio.fr/',
       githubUrl: '#',
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-slate-900/60 group-hover:bg-slate-900/40 transition-colors duration-300"></div>
                   <div className="absolute top-4 right-4 flex gap-2">
