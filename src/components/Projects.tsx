@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Cue',
+      description: 'Premium fashion e-commerce platform featuring signature tailoring and refined knitwear. Offers curated collections of high-end clothing and accessories with sophisticated design and seamless shopping experience.',
+      image: '/cue.png',
+      technologies: ['E-commerce', 'Fashion', 'Premium Retail', 'Tailoring'],
+      liveUrl: 'https://www.cue.com/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Paysa',
       description: 'Revolutionary digital payments platform empowering seamless financial transactions across Pakistan. Features secure payment processing, digital wallet functionality, and comprehensive financial empowerment solutions for modern digital interactions.',
       image: '/paysapk.png',
