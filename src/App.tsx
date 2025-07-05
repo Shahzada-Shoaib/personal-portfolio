@@ -3,9 +3,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import SkillsMarquee from './components/SkillsMarquee';
 import About from './components/About';
+import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Formation from './components/Formation';
-import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,9 +16,9 @@ function App() {
       <Hero />
       <SkillsMarquee />
       <About />
+      <Projects />
       <Experience />
       <Formation />
-      <Projects />
       <Contact />
       <Footer />
     </div>

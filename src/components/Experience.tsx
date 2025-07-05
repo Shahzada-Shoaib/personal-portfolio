@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-slate-900/50">
+    <section id="experience" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold mb-16 text-center">
           Experience<span className="text-cyan-400">.</span>

@@ -12,7 +12,7 @@ const Formation: React.FC = () => {
   ];
 
   return (
-    <section id="formation" className="py-20 px-6">
+    <section id="formation" className="py-20 px-6 bg-slate-900/50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold mb-16 text-center">
           Education<span className="text-cyan-400">.</span>

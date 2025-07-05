@@ -4,6 +4,33 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Chemist Warehouse',
+      description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
+      image: '/Screenshot 2025-06-30 at 12.57.02 AM copy.png',
+      technologies: ['E-commerce', 'Pharmacy', 'Online Retail', 'Healthcare'],
+      liveUrl: 'https://chemistwarehouse.com.au/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
+      title: 'Rent My Ride',
+      description: 'Premium car rental platform in UAE offering luxury vehicles with zero deposit deals. Features advanced booking system, fleet management, and customer service integration.',
+      image: '/Screenshot 2025-07-05 at 4.46.26 AM.png',
+      technologies: ['Car Rental', 'Booking System', 'UAE', 'Luxury Cars'],
+      liveUrl: 'https://www.rentmyride.ae/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
+      title: 'Social Hall HQ',
+      description: 'An exclusive social networking platform designed to revolutionize dating culture. Features sophisticated matchmaking algorithms, premium user experiences, and community-driven interactions.',
+      image: '/socialhall.png',
+      technologies: ['Social Network', 'Dating Platform', 'Community', 'Premium Experience'],
+      liveUrl: 'https://socialhallhq.com/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Techbay Solutions',
       description: 'Innovative technology solutions company with 10+ years of experience in delivering cutting-edge digital transformation services. Specializes in custom software development, web applications, and comprehensive IT consulting for businesses across various industries.',
       image: '/techbay.png',
@@ -67,38 +94,11 @@ const Projects: React.FC = () => {
       featured: true
     },
     {
-      title: 'Chemist Warehouse',
-      description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
-      image: '/Screenshot 2025-06-30 at 12.57.02 AM copy.png',
-      technologies: ['E-commerce', 'Pharmacy', 'Online Retail', 'Healthcare'],
-      liveUrl: 'https://chemistwarehouse.com.au/',
-      githubUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Rent My Ride',
-      description: 'Premium car rental platform in UAE offering luxury vehicles with zero deposit deals. Features advanced booking system, fleet management, and customer service integration.',
-      image: '/Screenshot 2025-07-05 at 4.46.26 AM.png',
-      technologies: ['Car Rental', 'Booking System', 'UAE', 'Luxury Cars'],
-      liveUrl: 'https://www.rentmyride.ae/',
-      githubUrl: '#',
-      featured: true
-    },
-    {
       title: 'Book My Studio',
       description: 'A comprehensive studio booking platform for France, allowing users to search and book recording studios. Features studio listings, booking management, and user authentication.',
       image: '/Screenshot 2025-07-05 at 5.05.02 AM.png',
       technologies: ['Laravel', 'JavaScript', 'PHP', 'MySQL'],
       liveUrl: 'https://www.bookmystudio.fr/',
-      githubUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Social Hall HQ',
-      description: 'An exclusive social networking platform designed to revolutionize dating culture. Features sophisticated matchmaking algorithms, premium user experiences, and community-driven interactions.',
-      image: '/socialhall.png',
-      technologies: ['Social Network', 'Dating Platform', 'Community', 'Premium Experience'],
-      liveUrl: 'https://socialhallhq.com/',
       githubUrl: '#',
       featured: true
     }
@@ -107,7 +107,7 @@ const Projects: React.FC = () => {
   const featuredProjects = projects.filter(project => project.featured);
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 bg-slate-900/50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold mb-16 text-center">
           Projects<span className="text-cyan-400">.</span>
