@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Paysa',
+      description: 'Revolutionary digital payments platform empowering seamless financial transactions across Pakistan. Features secure payment processing, digital wallet functionality, and comprehensive financial empowerment solutions for modern digital interactions.',
+      image: '/paysapk.png',
+      technologies: ['FinTech', 'Digital Payments', 'Mobile Banking', 'Financial Services'],
+      liveUrl: 'https://www.paysa.com.pk/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'AI Vox Agency',
       description: 'Advanced AI-powered phone automation platform that transforms customer support and sales with intelligent calling agents. Features natural conversation handling, voice recognition, and real-time analytics for 24/7 customer service.',
       image: '/aivox.png',
