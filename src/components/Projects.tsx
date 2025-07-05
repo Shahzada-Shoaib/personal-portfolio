@@ -29,6 +29,15 @@ const Projects: React.FC = () => {
       liveUrl: 'https://www.bookmystudio.fr/',
       githubUrl: '#',
       featured: true
+    },
+    {
+      title: 'Social Hall HQ',
+      description: 'An exclusive social networking platform designed to revolutionize dating culture. Features sophisticated matchmaking algorithms, premium user experiences, and community-driven interactions.',
+      image: '/socialhall.png',
+      technologies: ['Social Network', 'Dating Platform', 'Community', 'Premium Experience'],
+      liveUrl: 'https://socialhallhq.com/',
+      githubUrl: '#',
+      featured: true
     }
   ];
 
@@ -44,7 +53,7 @@ const Projects: React.FC = () => {
         {/* Featured Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-white">Featured Projects</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
               <div
                 key={index}
