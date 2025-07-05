@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Software Dads',
+      description: 'Smart A.I Solutions platform offering custom web development, AI automation, and intelligent AI agents. Focused on building smarter, more efficient digital solutions for modern businesses.',
+      image: '/software-dads.png',
+      technologies: ['AI Solutions', 'Web Development', 'Automation', 'AI Agents'],
+      liveUrl: 'https://softwaredads.com/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Chemist Warehouse',
       description: 'Australia\'s largest pharmacy retailer with a comprehensive e-commerce platform. Features product catalog, online ordering, prescription services, and store locator functionality.',
       image: '/Screenshot 2025-06-30 at 12.57.02 AM copy.png',
