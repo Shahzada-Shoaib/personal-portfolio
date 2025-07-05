@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'AI Vox Agency',
+      description: 'Advanced AI-powered phone automation platform that transforms customer support and sales with intelligent calling agents. Features natural conversation handling, voice recognition, and real-time analytics for 24/7 customer service.',
+      image: '/aivox.png',
+      technologies: ['AI Automation', 'Voice Recognition', 'Phone Systems', 'Customer Support'],
+      liveUrl: 'https://aivox.agency/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Software Dads',
       description: 'Smart A.I Solutions platform offering custom web development, AI automation, and intelligent AI agents. Focused on building smarter, more efficient digital solutions for modern businesses.',
       image: '/software-dads.png',
