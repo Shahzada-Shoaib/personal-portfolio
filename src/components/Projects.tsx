@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'XIQ Inc',
+      description: 'Advanced prospect research and analysis platform that enables 98% faster research capabilities. Features AI-powered prospect identification, comprehensive data analytics, and intelligent insights for sales and marketing teams.',
+      image: '/xiq.png',
+      technologies: ['AI Research', 'Data Analytics', 'Sales Intelligence', 'Prospect Analysis'],
+      liveUrl: 'https://xiqinc.com/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Ghanda',
       description: 'Australian lifestyle clothing brand featuring casual wear, denim, and basics for men, women, and kids. Offers contemporary fashion with a focus on comfort, quality, and accessible pricing across multiple categories.',
       image: '/ghanda.png',
