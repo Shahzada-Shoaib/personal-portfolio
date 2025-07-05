@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Techbay Solutions',
+      description: 'Innovative technology solutions company with 10+ years of experience in delivering cutting-edge digital transformation services. Specializes in custom software development, web applications, and comprehensive IT consulting for businesses across various industries.',
+      image: '/techbay.png',
+      technologies: ['Software Development', 'IT Consulting', 'Digital Transformation', 'Web Applications'],
+      liveUrl: 'https://techbay.co/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'XIQ Inc',
       description: 'Advanced prospect research and analysis platform that enables 98% faster research capabilities. Features AI-powered prospect identification, comprehensive data analytics, and intelligent insights for sales and marketing teams.',
       image: '/xiq.png',
