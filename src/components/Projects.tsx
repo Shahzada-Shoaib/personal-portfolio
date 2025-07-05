@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'Ghanda',
+      description: 'Australian lifestyle clothing brand featuring casual wear, denim, and basics for men, women, and kids. Offers contemporary fashion with a focus on comfort, quality, and accessible pricing across multiple categories.',
+      image: '/ghanda.png',
+      technologies: ['E-commerce', 'Fashion', 'Lifestyle', 'Australian Brand'],
+      liveUrl: 'https://ghanda.com/',
+      githubUrl: '#',
+      featured: true
+    },
+    {
       title: 'Cue',
       description: 'Premium fashion e-commerce platform featuring signature tailoring and refined knitwear. Offers curated collections of high-end clothing and accessories with sophisticated design and seamless shopping experience.',
       image: '/cue.png',
