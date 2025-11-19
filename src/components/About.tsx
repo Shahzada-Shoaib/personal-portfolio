@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const About: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const About: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Profile Image */}
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <div className="w-64 h-80 rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="/WhatsApp Image 2025-06-28 at 4.33.32 PM.jpeg" 
@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* About Content */}
           <div className="flex-1 space-y-6">
@@ -27,25 +27,32 @@ const About: React.FC = () => {
                 Sr. Software Engineer
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Results-driven Lead Software Engineer with 7+ years of experience in developing robust, 
-                user-centric web applications. I have a solid foundation in <span className="text-white font-medium">JavaScript, React.js, Vue.js, Node.js</span>, 
-                and modern web technologies.
+                Results-driven Lead Software Engineer with 7+ years of
+                experience in developing robust, user-centric web applications.
+                I have a solid foundation in{" "}
+                <span className="text-white font-medium">
+                  JavaScript, React.js, Vue.js, Node.js
+                </span>
+                , and modern web technologies.
               </p>
             </div>
 
             <div>
               <p className="text-gray-400 leading-relaxed">
-                Currently focused on learning and mastering essential web development skills. 
-                I combine strong technical skills with deep understanding of UX principles to deliver 
-                high-performance applications that drive business growth and enhance user engagement.
+                Currently focused on learning and mastering essential web
+                development skills. I combine strong technical skills with deep
+                understanding of UX principles to deliver high-performance
+                applications that drive business growth and enhance user
+                engagement.
               </p>
             </div>
 
             <div>
               <p className="text-gray-400 leading-relaxed">
-                Proficient in Agile methodologies, CI/CD, and cloud technologies. 
-                Skilled in creating scalable back-end systems and intuitive front-end interfaces 
-                that significantly improve application performance and user satisfaction.
+                Proficient in Agile methodologies, CI/CD, and cloud
+                technologies. Skilled in creating scalable back-end systems and
+                intuitive front-end interfaces that significantly improve
+                application performance and user satisfaction.
               </p>
             </div>
           </div>
