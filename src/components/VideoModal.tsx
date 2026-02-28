@@ -13,7 +13,6 @@ const VideoModal: React.FC = () => {
       // Check if modal has been shown before (using localStorage)
       // Only check localStorage if it's available (client-side)
       if (typeof window !== "undefined" && window.localStorage) {
-        const hasSeenModal = localStorage.getItem("hasSeenVideoModal");
         // For now, always show the modal (remove localStorage check for testing)
         // To enable localStorage check, uncomment the if statement below
         // if (!hasSeenModal) {
@@ -81,8 +80,8 @@ const VideoModal: React.FC = () => {
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement("a");
-    link.href = "/ShahzadaMSalmanResume.pdf";
-    link.download = "ShahzadaMSalmanResume.pdf";
+    link.href = "/SeniorFrontendEngineer.pdf";
+    link.download = "SeniorFrontendEngineer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -99,18 +98,18 @@ const VideoModal: React.FC = () => {
       />
 
       {/* Modal Content */}
-      <div className="relative bg-slate-900 rounded-2xl border border-slate-700 shadow-2xl max-w-md w-full overflow-hidden">
+      <div className="relative w-full max-w-md overflow-hidden border shadow-2xl bg-slate-900 rounded-2xl border-slate-700">
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 p-2 bg-slate-800/90 hover:bg-slate-700 rounded-full transition-colors duration-200"
+          className="absolute z-10 p-2 transition-colors duration-200 rounded-full top-4 right-4 bg-slate-800/90 hover:bg-slate-700"
           aria-label="Close modal"
         >
           <X size={20} className="text-white" />
         </button>
 
         {/* Video Container */}
-        <div className="relative w-full bg-black flex items-center justify-center">
+        <div className="relative flex items-center justify-center w-full bg-black">
           <video
             ref={videoRef}
             className="w-full h-auto max-h-[70vh] object-contain"
@@ -127,13 +126,13 @@ const VideoModal: React.FC = () => {
           {/* Play/Pause Button Overlay */}
           <button
             onClick={handlePlayPause}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 p-4 bg-slate-800/90 hover:bg-slate-700 rounded-full transition-all duration-200 shadow-lg hover:scale-110"
+            className="absolute z-10 p-4 transition-all duration-200 transform -translate-x-1/2 -translate-y-1/2 rounded-full shadow-lg top-1/2 left-1/2 bg-slate-800/90 hover:bg-slate-700 hover:scale-110"
             aria-label={isPlaying ? "Pause video" : "Play video"}
           >
             {isPlaying ? (
               <Pause size={32} className="text-white" />
             ) : (
-              <Play size={32} className="text-white ml-1" />
+                <Play size={32} className="ml-1 text-white" />
             )}
           </button>
         </div>
@@ -142,7 +141,7 @@ const VideoModal: React.FC = () => {
         <div className="p-6 bg-slate-800/50">
           <button
             onClick={handleDownloadResume}
-            className="w-full flex items-center justify-center gap-2 bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+            className="flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold transition-colors duration-200 rounded-lg bg-cyan-400 hover:bg-cyan-500 text-slate-900"
           >
             <Download size={20} />
             Download My Resume

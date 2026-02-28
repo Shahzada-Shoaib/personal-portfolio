@@ -24,6 +24,19 @@ const Projects: React.FC = () => {
       featured: true,
     },
     {
+      title: "OneStream  (Social Media SaaS  Platform )",
+      description: "OneStream Live is a feature-rich, cloud-based live streaming SaaS platform that enables content creators, businesses, and broadcasters to simultaneously multistream real-time and pre-recorded video content to 45+ social media destinations — including YouTube, Facebook, Instagram, Twitch, LinkedIn, TikTok, and custom RTMP endpoints — all from a single dashboard.",
+      image: "/one-stream.png",
+      technologies: [
+        "Social Network",
+        "SAAS",
+        "Community",
+      ],
+      liveUrl: "https://onstream.live",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
       title: "Social Hall HQ",
       description:
         "An exclusive social networking platform designed to revolutionize dating culture. Features sophisticated matchmaking algorithms, premium user experiences, and community-driven interactions.",
@@ -34,7 +47,22 @@ const Projects: React.FC = () => {
         "Community",
         "Premium Experience",
       ],
-      liveUrl: "https://socialhallhq.com/",
+      liveUrl: "https://socialhall.vercel.app/",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
+      title: "X-42's AI Powered Cafe POS",
+      description:
+        "An AI-powered point-of-sale system for cafes that automates inventory management, order processing, and customer analytics.",
+      image: "/x-42.png",
+      technologies: [
+        "AI",
+        "POS System",
+        "Cafe Management",
+        "Automation",
+      ],
+      liveUrl: "https://x-42.ai/product/pos-restaurant-cafe",
       githubUrl: "#",
       featured: true,
     },
@@ -75,6 +103,15 @@ const Projects: React.FC = () => {
       image: "/ghanda.png",
       technologies: ["E-commerce", "Fashion", "Lifestyle", "Australian Brand"],
       liveUrl: "https://ghanda.com/",
+      githubUrl: "#",
+      featured: true,
+    },
+    {
+      title: "Bite",
+      description: "bite Vendor is a cross-platform vendor management app built with React Native, developed as part of the Bite food ordering ecosystem. The app serves as the operational backbone for restaurant vendors, giving them a real-time window into every aspect of their business from a single mobile interface.",
+      image: "/bite-app.png",
+      technologies: ["React Native", "Vendor Management", "Food Ordering", "Cross-Platform"],
+      liveUrl: "https://play.google.com/store/apps/details?id=com.caterstation.bite&hl=en",
       githubUrl: "#",
       featured: true,
     },
@@ -148,18 +185,18 @@ const Projects: React.FC = () => {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <section id="projects" className="py-20 px-6 bg-slate-900/50">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold mb-16 text-center">
+    <section id="projects" className="px-6 py-20 bg-slate-900/50">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="mb-16 text-4xl font-bold text-center lg:text-5xl">
           Projects<span className="text-cyan-400">.</span>
         </h2>
 
         {/* Featured Projects */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-8 text-white">
+          <h3 className="mb-8 text-2xl font-semibold text-white">
             Featured Projects
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {featuredProjects.map((project, index) => (
               <div
                 key={index}
@@ -169,15 +206,15 @@ const Projects: React.FC = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-300"
+                    className="object-cover object-top w-full h-48 transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-slate-900/60 group-hover:bg-slate-900/40 transition-colors duration-300"></div>
-                  <div className="absolute top-4 right-4 flex gap-2">
+                  <div className="absolute inset-0 transition-colors duration-300 bg-slate-900/60 group-hover:bg-slate-900/40"></div>
+                  <div className="absolute flex gap-2 top-4 right-4">
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-slate-800/80 hover:bg-cyan-400 rounded-lg transition-colors duration-200 group/link"
+                      className="p-2 transition-colors duration-200 rounded-lg bg-slate-800/80 hover:bg-cyan-400 group/link"
                     >
                       <ExternalLink
                         size={16}
@@ -189,7 +226,7 @@ const Projects: React.FC = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-slate-800/80 hover:bg-cyan-400 rounded-lg transition-colors duration-200 group/link"
+                        className="p-2 transition-colors duration-200 rounded-lg bg-slate-800/80 hover:bg-cyan-400 group/link"
                       >
                         <Github
                           size={16}
@@ -207,17 +244,17 @@ const Projects: React.FC = () => {
                     </h4>
                     <ArrowUpRight
                       size={16}
-                      className="text-gray-400 group-hover:text-cyan-400 transition-colors duration-200"
+                      className="text-gray-400 transition-colors duration-200 group-hover:text-cyan-400"
                     />
                   </div>
-                  <p className="text-gray-400 mb-4 leading-relaxed">
+                  <p className="mb-4 leading-relaxed text-gray-400">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-slate-700/50 text-cyan-400 text-sm rounded-full"
+                        className="px-3 py-1 text-sm rounded-full bg-slate-700/50 text-cyan-400"
                       >
                         {tech}
                       </span>
