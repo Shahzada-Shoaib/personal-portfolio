@@ -200,8 +200,15 @@ const Projects: React.FC = () => {
             {featuredProjects.map((project, index) => (
               <div
                 key={index}
-                className="group bg-slate-800/30 rounded-lg overflow-hidden hover:bg-slate-800/50 transition-all duration-300 hover:scale-[1.02]"
+                className="group relative bg-slate-800/30 rounded-lg overflow-hidden hover:bg-slate-800/50 transition-all duration-300 hover:scale-[1.02] focus-within:ring-2 focus-within:ring-cyan-400/70"
               >
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title}`}
+                  className="absolute inset-0 z-10"
+                />
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -209,7 +216,7 @@ const Projects: React.FC = () => {
                     className="object-cover object-top w-full h-48 transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 transition-colors duration-300 bg-slate-900/60 group-hover:bg-slate-900/40"></div>
-                  <div className="absolute flex gap-2 top-4 right-4">
+                  <div className="absolute z-20 flex gap-2 top-4 right-4">
                     <a
                       href={project.liveUrl}
                       target="_blank"
