@@ -80,8 +80,8 @@ const VideoModal: React.FC = () => {
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement("a");
-    link.href = "/SeniorFrontendEngineer.pdf";
-    link.download = "SeniorFrontendEngineer.pdf";
+    link.href = "/shoaibcv.pdf";
+    link.download = "shoaibcv.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

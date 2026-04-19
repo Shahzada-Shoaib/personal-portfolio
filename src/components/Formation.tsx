@@ -3,12 +3,12 @@ import React from 'react';
 const Formation: React.FC = () => {
   const formations = [
     {
-      title: 'Bachelor of Science in Computer Science',
-      provider: 'Lancaster University',
-      duration: '2013 - 2017',
+      title: 'Master of Science (MSC)',
+      provider: 'Superior University',
+      duration: '',
       icon: '🎓',
-      color: 'bg-blue-500'
-    }
+      color: 'bg-blue-500',
+    },
   ];
 
   return (
@@ -37,9 +37,11 @@ const Formation: React.FC = () => {
                 </p>
               </div>
               
-              <div className="text-gray-400 text-sm">
-                {formation.duration}
-              </div>
+              {formation.duration ? (
+                <div className="text-gray-400 text-sm">
+                  {formation.duration}
+                </div>
+              ) : null}
             </div>
           ))}
         </div>

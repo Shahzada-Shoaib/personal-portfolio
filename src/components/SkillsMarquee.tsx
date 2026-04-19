@@ -3,21 +3,25 @@ import React from 'react';
 const SkillsMarquee: React.FC = () => {
   const skills = [
     'JAVASCRIPT',
-    'REACT.JS',
-    'VUE.JS',
-    'NODE.JS',
     'TYPESCRIPT',
-    'SHOPIFY',
+    'MERN STACK',
+    'REACT.JS',
+    'NODE.JS',
+    'EXPRESS.JS',
+    'MONGODB',
+    'REACT NATIVE',
     'SQL',
     'NOSQL',
+    'REST APIS',
+    'TWILIO',
+    'FREESWITCH',
+    'FUSIONPBX',
     'AGILE',
     'CI/CD',
     'AWS',
     'THIRD-PARTY INTEGRATION',
-    'CONTENTFUL',
-    'PRISMIC',
-    'STRAPI',
-    'HEADLESS CMS'
+    'SHOPIFY',
+    'HEADLESS CMS',
   ];
 
   return (

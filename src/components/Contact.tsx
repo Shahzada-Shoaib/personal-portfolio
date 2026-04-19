@@ -1,29 +1,32 @@
 import React from 'react';
-import { Linkedin, Github, Mail, ArrowUpRight, Download } from 'lucide-react';
+import { Linkedin, Mail, Phone, ArrowUpRight, Download } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const contactLinks = [
     {
-      platform: 'LinkedIn',
-      icon: Linkedin,
-      url: 'https://linkedin.com/in/shehzadasalman/'
-    },
-    {
-      platform: 'GitHub',
-      icon: Github,
-      url: 'https://github.com/ShehzadaSalman'
+      platform: 'Phone',
+      icon: Phone,
+      url: 'tel:+923231448064',
+      openInNewTab: false,
     },
     {
       platform: 'E-mail',
       icon: Mail,
-      url: 'mailto:shehzada.salman072@gmail.com'
-    }
+      url: 'mailto:shahzada.shoaib011@gmail.com',
+      openInNewTab: false,
+    },
+    {
+      platform: 'LinkedIn',
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/shahzada-shoaib/',
+      openInNewTab: true,
+    },
   ];
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/ShahzadaMSalmanResume.pdf';
-    link.download = 'Shahzada_M_Salman_Resume.pdf';
+    link.href = '/shoaibcv.pdf';
+    link.download = 'shoaibcv.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -45,8 +48,9 @@ const Contact: React.FC = () => {
             <a
               key={index}
               href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(link.openInNewTab
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {})}
               className="flex items-center justify-between p-6 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-colors duration-200 group"
             >
               <div className="flex items-center gap-4">

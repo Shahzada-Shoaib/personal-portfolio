@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail, Code } from 'lucide-react';
+import { Linkedin, Mail, Phone, Code } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -11,8 +11,8 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-2xl overflow-hidden border-4 border-cyan-400/20 shadow-2xl">
                 <img 
-                  src="/WhatsApp Image 2025-06-28 at 4.33.32 PM.jpeg" 
-                  alt="Shahzada M. Salman"
+                  src="/shoaibdp.png" 
+                  alt="Shahzada Shoaib"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -25,38 +25,39 @@ const Hero: React.FC = () => {
           {/* Hero Content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-cyan-400">Shahzada</span>.
+              Hi, I'm <span className="text-cyan-400">Shahzada Shoaib</span>.
             </h1>
             <p className="text-2xl lg:text-3xl text-gray-400 font-light mb-6">
-              Sr. Software Engineer
+              Full Stack Developer
             </p>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl">
-              Results-driven Lead Software Engineer with 7+ years of experience in developing robust, 
-              user-centric web applications. Expert in JavaScript (React.js, Vue.js, Node.js), Shopify, 
-              and SQL/NoSQL databases.
+              Results-driven Full Stack Developer with 3+ years of experience building robust,
+              user-centric web and mobile products. Strong with the MERN stack (MongoDB, Express,
+              React, Node.js), React Native for cross-platform apps, and SQL/NoSQL databases.
             </p>
 
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-start gap-4">
               <a
-                href="https://github.com/ShehzadaSalman"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+923231448064"
                 className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200"
+                aria-label="Phone"
               >
-                <Github size={20} />
+                <Phone size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/shehzadasalman/"
+                href="https://www.linkedin.com/in/shahzada-shoaib/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200"
+                aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:shehzada.salman072@gmail.com"
+                href="mailto:shahzada.shoaib011@gmail.com"
                 className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200"
+                aria-label="Email"
               >
                 <Mail size={20} />
               </a>

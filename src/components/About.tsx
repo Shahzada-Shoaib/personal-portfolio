@@ -11,29 +11,29 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Profile Image */}
           {/* <div className="flex-shrink-0">
-            <div className="w-64 h-80 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="/WhatsApp Image 2025-06-28 at 4.33.32 PM.jpeg" 
-                alt="Shahzada M. Salman"
-                className="w-full h-full object-cover"
-              />
-            </div>
+             <div className="w-64 h-80 rounded-lg overflow-hidden shadow-xl">
+             <img 
+               src="/shoaibdp.png" 
+               alt="Shahzada Shoaib"
+               className="w-full h-full object-cover"
+             />
+           </div>
           </div> */}
 
           {/* About Content */}
           <div className="flex-1 space-y-6">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-white">
-                Sr. Software Engineer
+                Full Stack Developer
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Results-driven Lead Software Engineer with 7+ years of
-                experience in developing robust, user-centric web applications.
-                I have a solid foundation in{" "}
+                Results-driven Full Stack Developer with 3+ years of experience
+                building robust, user-centric web and mobile applications. I work
+                across the{" "}
                 <span className="text-white font-medium">
-                  JavaScript, React.js, Vue.js, Node.js
+                  MERN stack (MongoDB, Express, React, Node.js) and React Native
                 </span>
-                , and modern web technologies.
+                , with solid JavaScript fundamentals and modern tooling.
               </p>
             </div>
 
@@ -50,9 +50,9 @@ const About: React.FC = () => {
             <div>
               <p className="text-gray-400 leading-relaxed">
                 Proficient in Agile methodologies, CI/CD, and cloud
-                technologies. Skilled in creating scalable back-end systems and
-                intuitive front-end interfaces that significantly improve
-                application performance and user satisfaction.
+                technologies. Skilled in creating scalable APIs and services,
+                polished web UIs, and React Native mobile experiences that
+                improve performance and user satisfaction.
               </p>
             </div>
           </div>

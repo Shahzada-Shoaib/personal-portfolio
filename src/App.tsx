@@ -8,7 +8,7 @@ import Experience from './components/Experience';
 import Formation from './components/Formation';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import VideoModal from './components/VideoModal';
+// import VideoModal from './components/VideoModal';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Formation />
       <Contact />
       <Footer />
-      <VideoModal />
+      {/* <VideoModal /> */}
     </div>
   );
 }

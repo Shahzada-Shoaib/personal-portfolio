@@ -5,27 +5,27 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       period: 'Jun 2021 - Present',
-      title: 'Lead Software Engineer | Teamo Inc',
+      title: 'Lead Full Stack Engineer | Teamo Inc',
       location: 'Islamabad, Pakistan',
-      description: 'Led development of large-scale enterprise solutions for Fortune 500 companies including DELL and Amazon, resulting in a 30% increase in client satisfaction and a 25% reduction in system downtime.'
+      description: 'Led full stack delivery for large-scale enterprise solutions for Fortune 500 companies including DELL and Amazon—React and Node services, data layers, and ops—resulting in a 30% increase in client satisfaction and a 25% reduction in system downtime.'
     },
     {
       period: 'Jan 2019 - Dec 2021',
-      title: 'Sr. Frontend Developer | XIQ inc',
+      title: 'Sr. Full Stack Developer | XIQ inc',
       location: 'California, USA',
-      description: 'Architected and built large-scale applications using React.js, improving application performance by 40% and reducing load times by 50%.'
+      description: 'Architected and built large-scale MERN-style applications with React and Node.js, improving application performance by 40% and reducing load times by 50%.'
     },
     {
       period: 'Aug 2018 - Dec 2019',
-      title: 'Frontend Developer | Zeikh Technologies',
+      title: 'Full Stack Developer | Zeikh Technologies',
       location: 'Dubai, Abu Dhabi',
-      description: 'Designed and developed 15+ high-conversion landing pages using React.js, contributing to a 45% growth in user base over 12 months.'
+      description: 'Designed and developed 15+ high-conversion web experiences with React and Node-backed integrations, contributing to a 45% growth in user base over 12 months.'
     },
     {
       period: 'Aug 2017 - Dec 2018',
-      title: 'Frontend Developer | Techbay Solutions',
+      title: 'Full Stack Developer | Techbay Solutions',
       location: 'Lahore, Pakistan',
-      description: 'Developed custom animations and micro-interactions using CSS and JavaScript, enhancing user engagement and reducing bounce rates by 35% on landing pages.'
+      description: 'Built responsive UIs with React and supported API-driven features with Node.js, including custom animations and micro-interactions that reduced bounce rates by 35% on key landing pages.'
     }
   ];
 
