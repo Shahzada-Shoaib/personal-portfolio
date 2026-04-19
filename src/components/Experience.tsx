@@ -4,29 +4,26 @@ import { ArrowUpRight } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      period: 'Jun 2021 - Present',
-      title: 'Lead Full Stack Engineer | Teamo Inc',
-      location: 'Islamabad, Pakistan',
-      description: 'Led full stack delivery for large-scale enterprise solutions for Fortune 500 companies including DELL and Amazon—React and Node services, data layers, and ops—resulting in a 30% increase in client satisfaction and a 25% reduction in system downtime.'
-    },
-    {
-      period: 'Jan 2019 - Dec 2021',
-      title: 'Sr. Full Stack Developer | XIQ inc',
-      location: 'California, USA',
-      description: 'Architected and built large-scale MERN-style applications with React and Node.js, improving application performance by 40% and reducing load times by 50%.'
-    },
-    {
-      period: 'Aug 2018 - Dec 2019',
-      title: 'Full Stack Developer | Zeikh Technologies',
-      location: 'Dubai, Abu Dhabi',
-      description: 'Designed and developed 15+ high-conversion web experiences with React and Node-backed integrations, contributing to a 45% growth in user base over 12 months.'
-    },
-    {
-      period: 'Aug 2017 - Dec 2018',
-      title: 'Full Stack Developer | Techbay Solutions',
+      period: 'Mar 2025 - Present',
+      title: 'Full Stack Developer | Bitnex Technologies',
       location: 'Lahore, Pakistan',
-      description: 'Built responsive UIs with React and supported API-driven features with Node.js, including custom animations and micro-interactions that reduced bounce rates by 35% on key landing pages.'
-    }
+      description:
+        'Develop and maintain the VoIP Dialer web and mobile app. Built an AIO tool to analyze AI visibility of websites for growth and ranking using Lovable (low-code) and Supabase. Ship scalable apps for businesses; user-friendly interfaces with React, React Native, and Angular. Delivered 50+ responsive custom landing pages with 90+ Google PageSpeed Insights scores.',
+    },
+    {
+      period: 'Jul 2023 - Feb 2025',
+      title: 'Full Stack Developer | TriCloud Technologies',
+      location: 'Lahore, Pakistan',
+      description:
+        'Customized themes and plugins with 90+ PageSpeed Insights scores. Rewrote HTML for SEO and accessibility standards, contributing to a 200% increase in users and stronger first-page Google visibility. Maintained graphic standards and consistent branding across product interfaces.',
+    },
+    {
+      period: 'Mar 2023 - May 2023',
+      title: 'Website Development Intern | Sisteme',
+      location: 'Lahore, Pakistan',
+      description:
+        'Resolved complex merge conflicts on a 16-person team while keeping timelines on track (29% faster delivery). Introduced SASS for CSS preprocessing, cutting styling issues by 62%. Customized Bootstrap components to match brand guidelines, improving client approval rates by 38%.',
+    },
   ];
 
   return (
